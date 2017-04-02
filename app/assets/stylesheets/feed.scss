@@ -7,13 +7,20 @@
 }
 
 .about-me {
-  width: 100%;
 }
 
 .recent-tweets {
-  width: 100%;
 }
 
-.ig-thumb {
-  width: 650px;
+@media (max-width: 680px) {
+  .thumbnail img {
+      max-height: 100%;
+      max-width: 100%;
+  }
+}
+
+@media (min-width: 680px) {
+  .ig-thumbnail {
+    width: 650px;
+  }
 }
