@@ -10,7 +10,7 @@
       </div>
     </div>
 
-    <h3>Recent Tweets:</h3>
+    <h3>Recent Tweets</h3>
     <ul class="list-group">
       <% @tweets.each do |tweet| %>
         <li class="list-group-item"><b><%= tweet.created_at.strftime("%m/%d/%Y %I:%M%p") %></b>: <%= auto_link(tweet.text, :html => { :target => '_blank' }) %></li>
