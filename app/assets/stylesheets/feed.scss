@@ -10,6 +10,7 @@
 }
 
 .recent-tweets {
+
 }
 
 @media (max-width: 680px) {
@@ -20,6 +21,10 @@
 }
 
 @media (min-width: 680px) {
+  .recent-ig {
+    width: 650px;
+    margin: 0px auto;
+  }
   .ig-thumbnail {
     width: 650px;
   }

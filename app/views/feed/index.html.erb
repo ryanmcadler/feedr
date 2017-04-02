@@ -1,6 +1,6 @@
 <div class="row">
 
-  <div class="col-md-3">
+  <div class="col-xs-12 col-md-3">
 
     <h3>About Me:</h3>
     <div class="thumbnail about-me">
@@ -19,15 +19,17 @@
     </ul>
   </div>
 
-  <div class="col-md-9">
-    <h3>Recent Instagram</h3>
-    <% @instagramfeed.each do |post| %>
-    	<div class="thumbnail ig-thumbnail">
-    		<div class="image"><%= image_tag(post[:images][:standard_resolution][:url], :class => "img-polaroid") %></div>
-    		<div class="caption"><%= post[:caption][:text] %></div>
-    	</div>
-    <% end %>
-    <a href="#top" title="Scroll back to the top" class="btn btn-mini backToTop">Back to the top</a>
+  <div class="col-xs-12 col-md-9">
+    <div class="recent-ig">
+      <h3>Recent Instagram</h3>
+      <% @instagramfeed.each do |post| %>
+      	<div class="thumbnail ig-thumbnail">
+      		<div class="image"><%= image_tag(post[:images][:standard_resolution][:url], :class => "img-polaroid") %></div>
+      		<div class="caption"><%= post[:caption][:text] %></div>
+      	</div>
+      <% end %>
+      <a href="#top" title="Scroll back to the top" class="btn btn-mini backToTop">Back to the top</a>
+    </div>
   </div>
 
 </div>
