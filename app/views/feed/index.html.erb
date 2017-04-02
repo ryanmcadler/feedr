@@ -3,7 +3,7 @@
   <div class="col-md-3">
 
     <h3>About Me:</h3>
-    <div class="thumbnail">
+    <div class="thumbnail about-me">
       <img src="<%= @twitter_photo_url %>" />
       <div class="caption">
         <%= Feedr::Application::BIO.html_safe %>
@@ -11,7 +11,7 @@
     </div>
 
     <h3>Recent Tweets</h3>
-    <ul class="list-group">
+    <ul class="list-group recent-tweets">
       <% @tweets.each do |tweet| %>
         <li class="list-group-item"><b><%= tweet.created_at.strftime("%m/%d/%Y %I:%M%p") %></b>: <%= auto_link(tweet.text, :html => { :target => '_blank' }) %></li>
       <% end %>
