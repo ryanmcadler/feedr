@@ -6,8 +6,6 @@ To get started:
 
 * Clone the repo
 
-* Update Twitter settings in /app/controllers/feed_controller.rb
-
-* Update other global variables in application config
+* Personalize global variables settings in application config
 
 * Deploy!
